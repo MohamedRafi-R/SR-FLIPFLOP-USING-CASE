@@ -42,23 +42,8 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM** Developed by:R.Mohamed Rafi; Register Number:24002982
 
-module ex06(q, q_bar, s, r, clk, reset); input s, r, clk, reset;
-output reg q;
-output q_bar;
-always@(posedge clk) begin
-if (reset) <=;
-else
-begin
-case({s,r})
-2'b00:q<=q;
-2'b01:q<=1'b0;
-2'b10:q<=1'b1;
-2'b11:q<=1'bx;
-endcase
-end
-end
-assign q_bar=~q;
-endmodule
+![Screenshot 2024-12-04 220252](https://github.com/user-attachments/assets/18e79084-0ee5-44e1-9ec7-3a2ee75079d7)
+
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
 */
